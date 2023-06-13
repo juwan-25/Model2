@@ -9,11 +9,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 th:text=" 'Model & Model and View' "></h1>
-    <a th:href="@{/test1?id=mirim&pass=qwer1234}">@RequestParam test1</a></br>
-    <a th:href="@{/test2?id=mirim1&pass=qwer5678}">@ModelAttribute test2</a></br>
-    <a th:href="@{/test3?data1=100&data2=200}">Model and View test3</a></br>
-    <a th:href="@{/test4}">test4</a></br>
-    <a th:href="@{/test5}">test5</a></br>
+    <h1 th:text=" 'Model Result' "></h1>
+    id : <span th:text="${uid}"></span> <br>
+    password : <span th:text="${upass}"></span>
 </body>
 </html>
